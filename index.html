@@ -86,14 +86,19 @@
 
         .images-section {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            flex-direction: column;
             gap: 20px;
+            flex-wrap: wrap;
         }
 
         .images-section img {
-            width: 32%;
+            width: 500px;
+            max-width: 100%;
+            margin: auto;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
         }
 
         .images-section img:hover {
@@ -161,9 +166,9 @@
         <h2>Exemple de résultats</h2>
         <p>Voici quelques exemples de résultats obtenus après plusieurs générations :</p>
         <div class="images-section">
-            <img src="images/screen-1.png" alt="Résultat 1">
             <img src="images/screen-2.png" alt="Résultat 2">
             <img src="images/screen-3.png" alt="Résultat 3">
+            <img src="images/screen-4.png" alt="Résultat 4">
         </div>
     </section>
 </div>

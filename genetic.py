@@ -72,7 +72,7 @@ class Population:
 population = Population(taille=20)
 
 # Nombre de générations à effectuer
-nombre_de_generations = 40
+nombre_de_generations = 20
 
 # Initialisation d'une liste pour stocker les scores du meilleur individu à chaque génération
 scores_meilleur_individu = []
