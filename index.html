@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Présentation du projet Genetic Algorithm en Python">
+    <title>Genetic Algo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.9);
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+
+        h2, h3 {
+            color: #4CAF50;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            color: #d6336c;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            overflow: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .images-section {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .images-section img {
+            width: 32%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .images-section img:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Genetic Algo</h1>
+    <p>Un projet Python pour optimiser des solutions grâce à un algorithme génétique</p>
+    <a href="https://github.com/Remi13Git/Genetic-Algo" class="btn">Télécharger le dépôt GitHub</a>
+</header>
+
+<div class="container">
+    <section>
+        <h2>À propos du projet</h2>
+        <p>
+            Ce projet implémente un <strong>algorithme génétique</strong> en Python. Il simule l'évolution d'une population d'individus au fil des générations afin de trouver une solution optimale à un problème d'optimisation. Chaque individu possède des caractéristiques telles que la <em>force</em>, la <em>vitesse</em>, la <em>défense</em>, la <em>vie</em>, et l'<em>endurance</em>.
+        </p>
+    </section>
+
+    <section>
+        <h2>Comment utiliser le projet</h2>
+        <h3>1. Installation des prérequis</h3>
+        <p>Avant de commencer, assurez-vous d'avoir <strong>Python 3.11</strong> installé sur votre machine.</p>
+
+        <h3>2. Cloner le projet</h3>
+        <pre><code>git clone https://github.com/Remi13Git/Genetic-Algo</code></pre>
+
+        <h3>3. Lancer le script</h3>
+        <p>Une fois dans le dossier du projet, exécutez la commande suivante pour lancer l'algorithme génétique :</p>
+        <pre><code>python3.11 genetic.py</code></pre>
+
+        <h3>4. Visualisation des résultats</h3>
+        <p>Le script génère un graphique montrant l'évolution du score du meilleur individu à chaque génération. Vous pouvez ajuster les paramètres comme la <code>population</code>, le <code>nombre_de_generations</code>, et le taux de mutation pour explorer différentes solutions.</p>
+    </section>
+
+    <section>
+        <h2>Dépendances</h2>
+        <p>Assurez-vous d'installer la bibliothèque nécessaire pour l'exécution du projet :</p>
+        <pre><code>pip install matplotlib</code></pre>
+        <p>Vous pouvez également utiliser le fichier <code>requirements.txt</code> pour installer les dépendances :</p>
+        <pre><code>pip install -r requirements.txt</code></pre>
+    </section>
+
+    <section>
+        <h2>Personnalisation</h2>
+        <p>
+            Le projet permet d'obtenir des résultats différents en modifiant certaines variables :
+        </p>
+        <ul>
+            <li><code>population</code> : Taille de la population.</li>
+            <li><code>nombre_de_generations</code> : Nombre de générations à simuler.</li>
+            <li><code>random.randint(-1, 1)</code> : Amplitude des mutations pour chaque caractéristique.</li>
+        </ul>
+        <p>
+            Modifiez ces variables directement dans le fichier <code>genetic.py</code> pour ajuster l'algorithme.
+        </p>
+    </section>
+
+    <section>
+        <h2>Exemple de résultats</h2>
+        <p>Voici quelques exemples de résultats obtenus après plusieurs générations :</p>
+        <div class="images-section">
+            <img src="images/screen-1.png" alt="Résultat 1">
+            <img src="images/screen-2.png" alt="Résultat 2">
+            <img src="images/screen-3.png" alt="Résultat 3">
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Genetic Algo</p>
+</footer>
+
+</body>
+</html>
