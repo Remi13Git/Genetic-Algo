@@ -1,4 +1,4 @@
-# Genetic Algorithm
+# Genetic Algo
 
 Ce projet implémente un algorithme génétique simple en Python pour résoudre un problème d'optimisation. Il utilise des concepts tels que la sélection naturelle, la mutation et la reproduction pour trouver une solution optimale au fil des générations.
 
@@ -21,13 +21,13 @@ Vous pouvez obtenir des résultats différents en modifiant certaines variables 
 - `population` : Taille de la population d'individus (solutions potentielles) dans chaque génération.
 - `nombre_de_generations` : Nombre total de générations que l'algorithme va parcourir.
 - `pourcentage_selection` : Pourcentage d'individus sélectionnés dans chaque génération pour la reproduction.
-- `mutation_random(-1, 1)` : Amplitude des mutations aléatoires appliquées aux individus pendant le processus de mutation.
+- `random.randint(-1, 1)` : Amplitude des mutations aléatoires appliquées aux individus pendant le processus de mutation.
 
 ### Exemple de modifications dans le code :
 
 - Augmenter la taille de la population pour obtenir une plus grande diversité de solutions :
   ```python
-  population = 500
+  population = Population(taille=100)
 
 ## Lancer l'Application
 
